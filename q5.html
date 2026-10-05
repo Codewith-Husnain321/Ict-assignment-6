@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+
+        .form-container {
+            width: 400px;
+            background-color: white;
+            padding: 25px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        .rating input {
+            width: auto;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <h2>Feedback Form</h2>
+
+        <form>
+
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Feedback</label>
+            <textarea placeholder="Write your feedback"></textarea>
+
+            <p>Rate our service:</p>
+
+            <div class="rating">
+
+                <label>
+                    <input type="radio" name="rating" value="1">
+                    1
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="2">
+                    2
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="3">
+                    3
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="4">
+                    4
+                </label>
+
+                <label>
+                    <input type="radio" name="rating" value="5">
+                    5
+                </label>
+
+            </div>
+
+            <br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
